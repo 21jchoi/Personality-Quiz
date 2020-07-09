@@ -21,7 +21,9 @@ var q1a4 = document.getElementById("q1a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", result1);
-
+q1a2.addEventListener("click", result2);
+q1a3.addEventListener("click", result3);
+q1a4.addEventListener("click", result4);
 
 
 
@@ -32,5 +34,14 @@ q1a1.addEventListener("click", result1);
 function result1(){
   
   
+  
+}
+function result2(){
+  
+}
+function result3(){
+  
+}
+function result4(){
   
 }
