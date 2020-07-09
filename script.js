@@ -26,7 +26,7 @@ var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", avatarAang);
+q1a1.addEventListener("click", avatarAang, disableBtn1);
 q1a2.addEventListener("click", southernRaiders);
 q1a3.addEventListener("click", crossroads);
 q1a4.addEventListener("click", tales);
@@ -87,6 +87,9 @@ function updateResult() {
     result.innerHTML = "You like all of them!";
   }
 }
-function disableBtn(){
-  document.getElementByClass("answer-choice").disabled=true;
+function disableBtn1(){
+  document.getElementById("q1a1").disabled=true;
+  document.getElementById("q1a2").disabled=true;
+  document.getElementById("q1a3").disabled=true;
+  document.getElementById("q1a4").disabled=true;
 }
