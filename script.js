@@ -87,3 +87,6 @@ function updateResult() {
     result.innerHTML = "You like all of them!";
   }
 }
+function disableBtn(){
+  document.getElementById("")
+}
