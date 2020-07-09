@@ -26,20 +26,32 @@ var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
 //#TODO: Add Event Listeners to your answer choice variables.
-q1a1.addEventListener("click", avatarAang, disableBtn1);
+q1a1.addEventListener("click", avatarAang);
 q1a2.addEventListener("click", southernRaiders);
 q1a3.addEventListener("click", crossroads);
 q1a4.addEventListener("click", tales);
+q1a1.addEventListener("click", disableBtn1);
+q1a2.addEventListener("click", disableBtn1);
+q1a3.addEventListener("click", disableBtn1);
+q1a4.addEventListener("click", disableBtn1);
 
 q2a1.addEventListener("click", tales);
 q2a2.addEventListener("click", avatarAang);
 q2a3.addEventListener("click", crossroads);
 q2a4.addEventListener("click", southernRaiders);
+q2a1.addEventListener("click", disableBtn2);
+q2a2.addEventListener("click", disableBtn2);
+q2a3.addEventListener("click", disableBtn2);
+q2a4.addEventListener("click", disableBtn2);
 
 q3a1.addEventListener("click", southernRaiders);
 q3a2.addEventListener("click", crossroads);
 q3a3.addEventListener("click", tales);
 q3a4.addEventListener("click", avatarAang);
+q3a1.addEventListener("click", disableBtn3);
+q3a2.addEventListener("click", disableBtn3);
+q3a3.addEventListener("click", disableBtn3);
+q3a4.addEventListener("click", disableBtn3);
 
 //#TODO: Define quiz functions here
 function avatarAang() {
@@ -87,9 +99,21 @@ function updateResult() {
     result.innerHTML = "You like all of them!";
   }
 }
-function disableBtn1(){
-  document.getElementById("q1a1").disabled=true;
-  document.getElementById("q1a2").disabled=true;
-  document.getElementById("q1a3").disabled=true;
-  document.getElementById("q1a4").disabled=true;
+function disableBtn1() {
+  document.getElementById("q1a1").disabled = true;
+  document.getElementById("q1a2").disabled = true;
+  document.getElementById("q1a3").disabled = true;
+  document.getElementById("q1a4").disabled = true;
+}
+function disableBtn2() {
+  document.getElementById("q2a1").disabled = true;
+  document.getElementById("q2a2").disabled = true;
+  document.getElementById("q2a3").disabled = true;
+  document.getElementById("q2a4").disabled = true;
+}
+function disableBtn3() {
+  document.getElementById("q3a1").disabled = true;
+  document.getElementById("q3a2").disabled = true;
+  document.getElementById("q3a3").disabled = true;
+  document.getElementById("q3a4").disabled = true;
 }
