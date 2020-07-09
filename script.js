@@ -36,11 +36,14 @@ function result1(){
   questionCount += 1;
 }
 function result2(){
-  
+  southernRaidersScore += 1;
+  questionCount += 1;
 }
 function result3(){
-  
+  crossroadsScore += 1;
+  questionCount += 1;
 }
 function result4(){
-  
+  talesScore += 1;
+  questionCount += 1;
 }
