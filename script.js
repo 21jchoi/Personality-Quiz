@@ -88,5 +88,5 @@ function updateResult() {
   }
 }
 function disableBtn(){
-  document.getElementById("")
+  document.getElementByClass("answer-choice").disabled=true;
 }
