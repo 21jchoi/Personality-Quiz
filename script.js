@@ -7,6 +7,8 @@ var southernRaidersScore = 0;
 var crossroadsScore = 0;
 var talesScore = 0;
 
+var result = document.getElementById("result");
+
 //#TODO: Use the DOM to create variables for the first quiz question.
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
@@ -43,6 +45,7 @@ q3a4.addEventListener("click", avatarAang);
 function avatarAang() {
   avatarAangScore += 1;
   questionCount += 1;
+  //alert("one pt avatar aang");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -50,6 +53,7 @@ function avatarAang() {
 function southernRaiders() {
   southernRaidersScore += 1;
   questionCount += 1;
+  //alert("one pt southern raiders");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -57,6 +61,7 @@ function southernRaiders() {
 function crossroads() {
   crossroadsScore += 1;
   questionCount += 1;
+  //alert("one pt crossroads");
   if (questionCount >= 3) {
     updateResult();
   }
@@ -64,6 +69,7 @@ function crossroads() {
 function tales() {
   talesScore += 1;
   questionCount += 1;
+  //alert("one pt tales");
   if (questionCount >= 3) {
     updateResult();
   }
