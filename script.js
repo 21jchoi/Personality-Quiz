@@ -75,19 +75,15 @@ function tales() {
   }
 }
 function updateResult() {
-  if (avatarAangScore>=2) {
-    result.innerHTML=("Sozin's Comet Part 4: Avatar Aang");
-  }
-  else if (southernRaidersScore>=2){
-    result.innerHTML=("The Southern Raiders");
-  }
-  else if (crossroadsScore>=2){
-    result.innerHTML=("The Crossroads of Destiny");
-  }
-  else if (talesScore>=2){
-    result.innerHTML=("The Tales of Ba Sing Se");
-  }
-  else{
-    result.innerHTML=("all of them!");
+  if (avatarAangScore >= 2) {
+    result.innerHTML = "Favorite Episode: Sozin's Comet Part 4: Avatar Aang";
+  } else if (southernRaidersScore >= 2) {
+    result.innerHTML = "Favorite Episode: The Southern Raiders";
+  } else if (crossroadsScore >= 2) {
+    result.innerHTML = "Favorite Episode: The Crossroads of Destiny";
+  } else if (talesScore >= 2) {
+    result.innerHTML = "Favorite Episode: The Tales of Ba Sing Se";
+  } else {
+    result.innerHTML = "You like all of them!";
   }
 }
