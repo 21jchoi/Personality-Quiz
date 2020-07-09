@@ -88,15 +88,15 @@ function tales() {
 }
 function updateResult() {
   if (avatarAangScore >= 2) {
-    result.innerHTML = "Favorite Episode: Sozin's Comet Part 4: Avatar Aang";
+    result.innerHTML = "Your result is... Sozin's Comet Part 4: Avatar Aang";
   } else if (southernRaidersScore >= 2) {
-    result.innerHTML = "Favorite Episode: The Southern Raiders";
+    result.innerHTML = "Your result is... The Southern Raiders";
   } else if (crossroadsScore >= 2) {
-    result.innerHTML = "Favorite Episode: The Crossroads of Destiny";
+    result.innerHTML = "Your result is... The Crossroads of Destiny";
   } else if (talesScore >= 2) {
-    result.innerHTML = "Favorite Episode: The Tales of Ba Sing Se";
+    result.innerHTML = "Your result is... The Tales of Ba Sing Se";
   } else {
-    result.innerHTML = "You like all of them!";
+    result.innerHTML = "Your result is... you like all of them!";
   }
 }
 function disableBtn1() {
