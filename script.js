@@ -7,17 +7,11 @@ var southernRaidersScore = 0;
 var crossroadsScore = 0;
 var talesScore = 0;
 
-
-
 //#TODO: Use the DOM to create variables for the first quiz question.
 var q1a1 = document.getElementById("q1a1");
 var q1a2 = document.getElementById("q1a2");
 var q1a3 = document.getElementById("q1a3");
 var q1a4 = document.getElementById("q1a4");
-
-
-
-
 
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", result1);
@@ -25,25 +19,33 @@ q1a2.addEventListener("click", result2);
 q1a3.addEventListener("click", result3);
 q1a4.addEventListener("click", result4);
 
-
-
-
-
-
 //#TODO: Define quiz functions here
-function result1(){
+function result1() {
   avatarAangScore += 1;
   questionCount += 1;
+  if (questionCount >= 3) {
+    updateResult();
+  }
 }
-function result2(){
+function result2() {
   southernRaidersScore += 1;
   questionCount += 1;
+  if (questionCount >= 3) {
+    updateResult();
+  }
 }
-function result3(){
+function result3() {
   crossroadsScore += 1;
   questionCount += 1;
+  if (questionCount >= 3) {
+    updateResult();
+  }
 }
-function result4(){
+function result4() {
   talesScore += 1;
   questionCount += 1;
+  if (questionCount >= 3) {
+    updateResult();
+  }
 }
+function updateResult() {}
