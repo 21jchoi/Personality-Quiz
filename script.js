@@ -32,9 +32,8 @@ q1a4.addEventListener("click", result4);
 
 //#TODO: Define quiz functions here
 function result1(){
-  
-  
-  
+  avatarAangScore += 1;
+  questionCount += 1;
 }
 function result2(){
   
