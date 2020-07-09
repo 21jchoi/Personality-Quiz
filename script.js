@@ -48,4 +48,6 @@ function result4() {
     updateResult();
   }
 }
-function updateResult() {}
+function updateResult() {
+  
+}
