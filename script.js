@@ -101,14 +101,14 @@ function tales() {
   }
 }
 function updateResult() {
-  if (avatarAangScore >= 2) {
-    result.innerHTML = "Your result is... Sozin's Comet Part 4: Avatar Aang";
-  } else if (southernRaidersScore >= 2) {
-    result.innerHTML = "Your result is... The Southern Raiders";
-  } else if (crossroadsScore >= 2) {
-    result.innerHTML = "Your result is... The Crossroads of Destiny";
-  } else if (talesScore >= 2) {
-    result.innerHTML = "Your result is... The Tales of Ba Sing Se";
+  if (avatarAangScore >= 3) {
+    result.innerHTML = "Your result is... Sozin's Comet Part 4: Avatar Aang (3x21)";
+  } else if (southernRaidersScore >= 3) {
+    result.innerHTML = "Your result is... The Southern Raiders (3x16)";
+  } else if (crossroadsScore >= 3) {
+    result.innerHTML = "Your result is... The Crossroads of Destiny (2x20)";
+  } else if (talesScore >= 3) {
+    result.innerHTML = "Your result is... The Tales of Ba Sing Se (2x15)";
   } else {
     result.innerHTML = "Your result is... you like all of them!";
   }
