@@ -25,6 +25,11 @@ var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 var q3a4 = document.getElementById("q3a4");
 
+var q4a1 = document.getElementById("q4a1");
+var q4a2 = document.getElementById("q4a2");
+var q4a3 = document.getElementById("q4a3");
+var q4a4 = document.getElementById("q4a4");
+
 //#TODO: Add Event Listeners to your answer choice variables.
 q1a1.addEventListener("click", avatarAang);
 q1a2.addEventListener("click", southernRaiders);
@@ -53,12 +58,21 @@ q3a2.addEventListener("click", disableBtn3);
 q3a3.addEventListener("click", disableBtn3);
 q3a4.addEventListener("click", disableBtn3);
 
+q4a1.addEventListener("click", southernRaiders);
+q4a2.addEventListener("click", avatarAang);
+q4a3.addEventListener("click", crossroads);
+q4a4.addEventListener("click", tales);
+q4a1.addEventListener("click", disableBtn4);
+q4a2.addEventListener("click", disableBtn4);
+q4a3.addEventListener("click", disableBtn4);
+q4a4.addEventListener("click", disableBtn4);
+
 //#TODO: Define quiz functions here
 function avatarAang() {
   avatarAangScore += 1;
   questionCount += 1;
   //alert("one pt avatar aang");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
     updateResult();
   }
 }
@@ -66,7 +80,7 @@ function southernRaiders() {
   southernRaidersScore += 1;
   questionCount += 1;
   //alert("one pt southern raiders");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
     updateResult();
   }
 }
@@ -74,7 +88,7 @@ function crossroads() {
   crossroadsScore += 1;
   questionCount += 1;
   //alert("one pt crossroads");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
     updateResult();
   }
 }
@@ -82,7 +96,7 @@ function tales() {
   talesScore += 1;
   questionCount += 1;
   //alert("one pt tales");
-  if (questionCount >= 3) {
+  if (questionCount >= 4) {
     updateResult();
   }
 }
@@ -116,4 +130,10 @@ function disableBtn3() {
   document.getElementById("q3a2").disabled = true;
   document.getElementById("q3a3").disabled = true;
   document.getElementById("q3a4").disabled = true;
+}
+function disableBtn4() {
+  document.getElementById("q4a1").disabled = true;
+  document.getElementById("q4a2").disabled = true;
+  document.getElementById("q4a3").disabled = true;
+  document.getElementById("q4a4").disabled = true;
 }
